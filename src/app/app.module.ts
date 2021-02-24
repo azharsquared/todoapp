@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { TodoListHeaderComponent } from './todo-list-header/todo-list-header.component';
 import { TodoListBodyComponent } from './todo-list-body/todo-list-body.component';
 import { TodoListFooterComponent } from './todo-list-footer/todo-list-footer.component';
+import { TodoCardComponent } from './todo-card/todo-card.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { TodoListFooterComponent } from './todo-list-footer/todo-list-footer.com
     TodoListHeaderComponent,
     TodoListBodyComponent,
     TodoListFooterComponent,
+    TodoCardComponent,
   ],
   imports: [
     BrowserModule,

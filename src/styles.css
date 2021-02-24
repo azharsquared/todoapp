@@ -60,7 +60,7 @@ body{
   cursor: pointer;
   border-radius: 3px;
   opacity: 0.6;
-  pointer-events: none;
+  /* pointer-events: none; */
   transition: all 0.3s ease;
 }
 .inputField button:hover,
@@ -69,7 +69,7 @@ body{
 }
 .inputField button.active{
   opacity: 1;
-  pointer-events: auto;
+  /* pointer-events: auto; */
 }
 .wrapper .todoList{
   max-height: 250px;
@@ -121,10 +121,10 @@ body{
   cursor: pointer;
   user-select: none;
   opacity: 0.6;
-  pointer-events: none;
+  /* pointer-events: none; */
   transition: all 0.3s ease;
 }
 .footer button.active{
   opacity: 1;
-  pointer-events: auto;
+  /* pointer-events: auto; */
 }

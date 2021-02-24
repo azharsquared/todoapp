@@ -1,19 +1,16 @@
 <body>
   <div class="wrapper">
-    <header>Todo App</header>
+    <header>{{appName}}</header>
     <div class="inputField">
-      <input type="text" placeholder="Add your new todo">
-      <button><i class="fas fa-plus"></i></button>
+      <input #task type="text" placeholder="{{defaultText}}"/>
+      <button (click)="addTodo(task.value)"><i class="fas fa-plus" ></i></button>
     </div>
-    <ul class="todoList">
-      <!-- data are comes from local storage -->
+    <ul class="todoList" *ngFor="let task of tasks">
+      <app-todo-card [todoName] = "task" (todoDeleteEvent)="deleteCard($event)"></app-todo-card>
     </ul>
     <div class="footer">
       <span>You have <span class="pendingTasks"></span> pending tasks</span>
-      <button>Clear All</button>
+      <button (click)="clearAll()">Clear All</button>
     </div>
   </div>
-
-  <!-- <script src="script.js"></script> -->
-
 </body>
